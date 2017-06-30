@@ -1,0 +1,6 @@
+framework module Pods_BikeGarage {
+  umbrella header "Pods-BikeGarage-umbrella.h"
+
+  export *
+  module * { export * }
+}
