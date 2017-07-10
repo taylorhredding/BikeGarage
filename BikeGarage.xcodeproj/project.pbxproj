@@ -14,10 +14,13 @@
 		F3279EB41F05DC88006E4F35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3279EB31F05DC88006E4F35 /* Assets.xcassets */; };
 		F3279EB71F05DC88006E4F35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3279EB51F05DC88006E4F35 /* LaunchScreen.storyboard */; };
 		F3279EBF1F05DCD3006E4F35 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3279EBE1F05DCD3006E4F35 /* GoogleService-Info.plist */; };
+		F33662C21F0DC3130007C898 /* BikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33662C11F0DC3130007C898 /* BikeViewController.swift */; };
 		F33BA8BB1F069C030037D24A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33BA8BA1F069C030037D24A /* SignUpViewController.swift */; };
 		F33BA8BE1F069C8D0037D24A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33BA8BD1F069C8D0037D24A /* User.swift */; };
 		F33BA8C11F06A5860037D24A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33BA8C01F06A5860037D24A /* HomeViewController.swift */; };
 		F33BA8C31F06A5B80037D24A /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33BA8C21F06A5B80037D24A /* CreateUserViewController.swift */; };
+		F33BA8C51F0730630037D24A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33BA8C41F0730630037D24A /* MenuViewController.swift */; };
+		F33BA8E81F0DB8FA0037D24A /* hamburgerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = F33BA8E71F0DB8FA0037D24A /* hamburgerIcon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,10 +35,13 @@
 		F3279EB61F05DC88006E4F35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3279EB81F05DC88006E4F35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3279EBE1F05DCD3006E4F35 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F33662C11F0DC3130007C898 /* BikeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BikeViewController.swift; sourceTree = "<group>"; };
 		F33BA8BA1F069C030037D24A /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		F33BA8BD1F069C8D0037D24A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F33BA8C01F06A5860037D24A /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F33BA8C21F06A5B80037D24A /* CreateUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
+		F33BA8C41F0730630037D24A /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		F33BA8E71F0DB8FA0037D24A /* hamburgerIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hamburgerIcon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,7 @@
 		F3279EAB1F05DC88006E4F35 /* BikeGarage */ = {
 			isa = PBXGroup;
 			children = (
+				F33BA8E61F0DB8200037D24A /* Images */,
 				F33BA8BC1F069C420037D24A /* ViewControllers */,
 				F33BA8BF1F069D0D0037D24A /* Models */,
 				F3279EAC1F05DC88006E4F35 /* AppDelegate.swift */,
@@ -107,6 +114,8 @@
 				F33BA8BA1F069C030037D24A /* SignUpViewController.swift */,
 				F33BA8C01F06A5860037D24A /* HomeViewController.swift */,
 				F33BA8C21F06A5B80037D24A /* CreateUserViewController.swift */,
+				F33BA8C41F0730630037D24A /* MenuViewController.swift */,
+				F33662C11F0DC3130007C898 /* BikeViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -117,6 +126,14 @@
 				F33BA8BD1F069C8D0037D24A /* User.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		F33BA8E61F0DB8200037D24A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F33BA8E71F0DB8FA0037D24A /* hamburgerIcon.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +202,7 @@
 				F3279EB71F05DC88006E4F35 /* LaunchScreen.storyboard in Resources */,
 				F3279EBF1F05DCD3006E4F35 /* GoogleService-Info.plist in Resources */,
 				F3279EB41F05DC88006E4F35 /* Assets.xcassets in Resources */,
+				F33BA8E81F0DB8FA0037D24A /* hamburgerIcon.png in Resources */,
 				F3279EB21F05DC88006E4F35 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,7 +265,9 @@
 				F33BA8C11F06A5860037D24A /* HomeViewController.swift in Sources */,
 				F33BA8BE1F069C8D0037D24A /* User.swift in Sources */,
 				F33BA8BB1F069C030037D24A /* SignUpViewController.swift in Sources */,
+				F33BA8C51F0730630037D24A /* MenuViewController.swift in Sources */,
 				F3279EAF1F05DC88006E4F35 /* LogInViewController.swift in Sources */,
+				F33662C21F0DC3130007C898 /* BikeViewController.swift in Sources */,
 				F3279EAD1F05DC88006E4F35 /* AppDelegate.swift in Sources */,
 				F33BA8C31F06A5B80037D24A /* CreateUserViewController.swift in Sources */,
 			);
