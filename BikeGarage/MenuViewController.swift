@@ -27,21 +27,20 @@ class MenuViewController: UIViewController {
     
     }
     
-    @IBAction func btnTapped(_ sender: Any) {
+    @IBAction func bikeTapped(_ sender: Any) {
         
-        self.dismiss(animated: true) { 
-            self.performSegue(withIdentifier: "BikeViewController", sender: nil)
+        let homeVC:HomeViewController = self.presentingViewController! as! HomeViewController
+        print(homeVC.restorationIdentifier!)
+        
+        self.dismiss(animated: true) {
+            DispatchQueue.main.async {
+                
+                let bikeVC:BikeViewController = self.storyboard?.instantiateViewController(withIdentifier: "BikeViewController") as! BikeViewController
+                homeVC.present(bikeVC, animated: false, completion: nil)
+                
+            }
         }
-        
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        
-//        let bikeVC = segue.destination as! BikeViewController
-//        bikeVC.imageURL = sender as! String
-//        bikeVC.descrip = descriptionTextField.text!
-//        bikeVC.uuid = uuid
-//
-//    }
 
 }

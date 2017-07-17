@@ -15,39 +15,15 @@ class BikeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
-        // Do any additional setup after loading the view.
-        
-//        let menuLeftNavigationController = storyboard!.instantiateViewController(withIdentifier: "LeftMenuNavigationController") as! UISideMenuNavigationController
-//        SideMenuManager.menuLeftNavigationController = menuLeftNavigationController
-        
-      
-//        MenuViewController.dismiss(UIViewController)
-        
-//        SideMenuManager.menuWidth = (0.75 * 240)
-//        SideMenuManager.menuPresentMode = .menuSlideIn
-//        SideMenuManager.menuAnimationPresentDuration = 0.5
-//        SideMenuManager.menuFadeStatusBar = false
-//        SideMenuManager.menuAnimationFadeStrength = 0.3
-//        SideMenuManager.menuPushStyle = .replace
-        
+        print("We Made It To Bikes")
         
         
     }
-
-//
-//    @IBAction func menuTapped(_ sender: Any) {
-//        
-//        if menu{
-//            dismiss(animated: true, completion: nil)
-//            menu = false
-//        }else{
-//            present(SideMenuManager.menuLeftNavigationController!, animated: true, completion: nil)
-//            menu = true
-//        }
-//        
-//        
-//    }
+    
+    @IBAction func menuTapped(_ sender: Any) {
+        
+        performSegue(withIdentifier: "bikeToMenu", sender: nil)
+    }
     
 
 }

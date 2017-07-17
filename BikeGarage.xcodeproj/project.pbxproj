@@ -10,11 +10,11 @@
 		D3AEE4F7985487F754D24B30 /* Pods_BikeGarage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE5090DB3376A52C2AB06AD /* Pods_BikeGarage.framework */; };
 		F3279EAD1F05DC88006E4F35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3279EAC1F05DC88006E4F35 /* AppDelegate.swift */; };
 		F3279EAF1F05DC88006E4F35 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3279EAE1F05DC88006E4F35 /* LogInViewController.swift */; };
-		F3279EB21F05DC88006E4F35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3279EB01F05DC88006E4F35 /* Main.storyboard */; };
 		F3279EB41F05DC88006E4F35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3279EB31F05DC88006E4F35 /* Assets.xcassets */; };
 		F3279EB71F05DC88006E4F35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3279EB51F05DC88006E4F35 /* LaunchScreen.storyboard */; };
 		F3279EBF1F05DCD3006E4F35 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3279EBE1F05DCD3006E4F35 /* GoogleService-Info.plist */; };
 		F33662C21F0DC3130007C898 /* BikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33662C11F0DC3130007C898 /* BikeViewController.swift */; };
+		F33662C51F17C8370007C898 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F33662C31F17C8370007C898 /* Main.storyboard */; };
 		F33BA8BB1F069C030037D24A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33BA8BA1F069C030037D24A /* SignUpViewController.swift */; };
 		F33BA8BE1F069C8D0037D24A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33BA8BD1F069C8D0037D24A /* User.swift */; };
 		F33BA8C11F06A5860037D24A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33BA8C01F06A5860037D24A /* HomeViewController.swift */; };
@@ -30,12 +30,12 @@
 		F3279EA91F05DC88006E4F35 /* BikeGarage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BikeGarage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3279EAC1F05DC88006E4F35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3279EAE1F05DC88006E4F35 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
-		F3279EB11F05DC88006E4F35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F3279EB31F05DC88006E4F35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3279EB61F05DC88006E4F35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3279EB81F05DC88006E4F35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3279EBE1F05DCD3006E4F35 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F33662C11F0DC3130007C898 /* BikeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BikeViewController.swift; sourceTree = "<group>"; };
+		F33662C41F17C8370007C898 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F33BA8BA1F069C030037D24A /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		F33BA8BD1F069C8D0037D24A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F33BA8C01F06A5860037D24A /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -98,7 +98,7 @@
 				F33BA8BC1F069C420037D24A /* ViewControllers */,
 				F33BA8BF1F069D0D0037D24A /* Models */,
 				F3279EAC1F05DC88006E4F35 /* AppDelegate.swift */,
-				F3279EB01F05DC88006E4F35 /* Main.storyboard */,
+				F33662C31F17C8370007C898 /* Main.storyboard */,
 				F3279EB31F05DC88006E4F35 /* Assets.xcassets */,
 				F3279EB51F05DC88006E4F35 /* LaunchScreen.storyboard */,
 				F3279EB81F05DC88006E4F35 /* Info.plist */,
@@ -200,10 +200,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3279EB71F05DC88006E4F35 /* LaunchScreen.storyboard in Resources */,
+				F33662C51F17C8370007C898 /* Main.storyboard in Resources */,
 				F3279EBF1F05DCD3006E4F35 /* GoogleService-Info.plist in Resources */,
 				F3279EB41F05DC88006E4F35 /* Assets.xcassets in Resources */,
 				F33BA8E81F0DB8FA0037D24A /* hamburgerIcon.png in Resources */,
-				F3279EB21F05DC88006E4F35 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,20 +276,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F3279EB01F05DC88006E4F35 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F3279EB11F05DC88006E4F35 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F3279EB51F05DC88006E4F35 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F3279EB61F05DC88006E4F35 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F33662C31F17C8370007C898 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F33662C41F17C8370007C898 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

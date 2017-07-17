@@ -10,27 +10,20 @@ import UIKit
 import SideMenu
 
 class HomeViewController: UIViewController {
-    
-    //open static var menuPresentMode: MenuPresentMode = .menuDissolveIn
-    
-    
-    
+       
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
- 
-
-        // Do any additional setup after loading the view.
-        
-//        SideMenuManager.menuWidth = (0.75 * 240)
-//        SideMenuManager.menuPresentMode = .menuSlideIn
-//        SideMenuManager.menuAnimationPresentDuration = 0.5
-//        SideMenuManager.menuFadeStatusBar = false
-//        SideMenuManager.menuAnimationFadeStrength = 0.3
-//        SideMenuManager.menuPushStyle = .replace
-        
     }
 
+    @IBAction func menuTapped(_ sender: Any) {
+        
+        performSegue(withIdentifier: "homeToMenu", sender: nil)
+        
+    }
+    
+    
+    
 
 }
