@@ -13,6 +13,8 @@ class MenuViewController: UIViewController {
     
     @IBOutlet weak var homeBtn: UIButton!
     @IBOutlet weak var bikeBtn: UIButton!
+    @IBOutlet weak var accountBtn: UIButton!
+    @IBOutlet weak var mileageBtn: UIButton!
     
     override func viewDidLoad() {
         
@@ -20,13 +22,32 @@ class MenuViewController: UIViewController {
             
             homeBtn.isEnabled = false
             bikeBtn.isEnabled = true
+            accountBtn.isEnabled = true
+            mileageBtn.isEnabled = true
             
         }else if presentingViewController?.restorationIdentifier == "BikeViewController" {
             
             homeBtn.isEnabled = true
             bikeBtn.isEnabled = false
+            accountBtn.isEnabled = true
+            mileageBtn.isEnabled = true
+            
+        }else if presentingViewController?.restorationIdentifier == "AccountViewController" {
+            
+            homeBtn.isEnabled = true
+            bikeBtn.isEnabled = true
+            accountBtn.isEnabled = false
+            mileageBtn.isEnabled = true
+            
+        }else if presentingViewController?.restorationIdentifier == "MileageViewController" {
+            
+            homeBtn.isEnabled = true
+            bikeBtn.isEnabled = true
+            accountBtn.isEnabled = true
+            mileageBtn.isEnabled = false
             
         }
+            
 
         // Do any additional setup after loading the view.
         
@@ -70,5 +91,34 @@ class MenuViewController: UIViewController {
             }
         }
     }
+    @IBAction func accountTapped(_ sender: Any) {
+        
+        let preVC:UIViewController = self.presentingViewController!
+        print(preVC.restorationIdentifier!)
+        
+        self.dismiss(animated: true) {
+            DispatchQueue.main.async {
+                
+                let actVC:AccountViewController = self.storyboard?.instantiateViewController(withIdentifier: "AccountViewController") as! AccountViewController
+                preVC.present(actVC, animated: false, completion: nil)
+                
+            }
+        }
+        
+    }
 
+    @IBAction func mileageTapped(_ sender: Any) {
+        
+        let preVC:UIViewController = self.presentingViewController!
+        print(preVC.restorationIdentifier!)
+        
+        self.dismiss(animated: true) {
+            DispatchQueue.main.async {
+                
+                let mileVC:MileageViewController = self.storyboard?.instantiateViewController(withIdentifier: "MileageViewController") as! MileageViewController
+                preVC.present(mileVC, animated: false, completion: nil)
+                
+            }
+        }
+    }
 }
