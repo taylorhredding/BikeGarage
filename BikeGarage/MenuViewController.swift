@@ -11,8 +11,22 @@ import SideMenu
 
 class MenuViewController: UIViewController {
     
+    @IBOutlet weak var homeBtn: UIButton!
+    @IBOutlet weak var bikeBtn: UIButton!
+    
     override func viewDidLoad() {
         
+        if presentingViewController?.restorationIdentifier == "HomeViewController" {
+            
+            homeBtn.isEnabled = false
+            bikeBtn.isEnabled = true
+            
+        }else if presentingViewController?.restorationIdentifier == "BikeViewController" {
+            
+            homeBtn.isEnabled = true
+            bikeBtn.isEnabled = false
+            
+        }
 
         // Do any additional setup after loading the view.
         
@@ -29,18 +43,32 @@ class MenuViewController: UIViewController {
     
     @IBAction func bikeTapped(_ sender: Any) {
         
-        let homeVC:HomeViewController = self.presentingViewController! as! HomeViewController
-        print(homeVC.restorationIdentifier!)
+        let preVC:UIViewController = self.presentingViewController!
+        print(preVC.restorationIdentifier!)
         
         self.dismiss(animated: true) {
             DispatchQueue.main.async {
                 
                 let bikeVC:BikeViewController = self.storyboard?.instantiateViewController(withIdentifier: "BikeViewController") as! BikeViewController
-                homeVC.present(bikeVC, animated: false, completion: nil)
+                preVC.present(bikeVC, animated: false, completion: nil)
                 
             }
         }
     }
     
+    @IBAction func homeTapped(_ sender: Any) {
+        
+        let preVC:UIViewController = self.presentingViewController!
+        print(preVC.restorationIdentifier!)
+        
+        self.dismiss(animated: true) {
+            DispatchQueue.main.async {
+                
+                let homeVC:HomeViewController = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+                preVC.present(homeVC, animated: false, completion: nil)
+                
+            }
+        }
+    }
 
 }
