@@ -34,7 +34,7 @@ class CreateUserViewController: UIViewController {
                 
                 if error != nil {
                     
-                    print("Hey we have an error:\(error)")
+                    print("Hey we have an error:\(String(describing: error))")
                     
                     //show user error
                     let alertController = UIAlertController(title: "Easy There Cowboy!", message: "Passwords must be more then 6 characters!", preferredStyle: UIAlertControllerStyle.alert)

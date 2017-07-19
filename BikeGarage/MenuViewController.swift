@@ -99,7 +99,7 @@ class MenuViewController: UIViewController {
         self.dismiss(animated: true) {
             DispatchQueue.main.async {
                 
-                let actVC:AccountViewController = self.storyboard?.instantiateViewController(withIdentifier: "AccountViewController") as! AccountViewController
+                let actVC:UINavigationController = self.storyboard?.instantiateViewController(withIdentifier: "AccountNavController") as! UINavigationController
                 preVC.present(actVC, animated: false, completion: nil)
                 
             }
