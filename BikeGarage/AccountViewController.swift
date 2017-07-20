@@ -14,6 +14,9 @@ class AccountViewController: UIViewController {
 
     @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet weak var emailLbl: UILabel!
+    @IBOutlet weak var editBtn: UIButton!
+    @IBOutlet weak var chngPasswordBtn: UIButton!
+    
     var name = ""
     
     
@@ -21,6 +24,9 @@ class AccountViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        editBtn.isEnabled = false
+        chngPasswordBtn.isEnabled = false
         
         Database.database().reference().child("users").child(Auth.auth().currentUser!.uid).observeSingleEvent(of: .value, with: { (snapshot) in
             
@@ -31,6 +37,8 @@ class AccountViewController: UIViewController {
             self.nameLbl.text = "Name: \(self.name)"
             self.emailLbl.text = "Email: \(email)"
             
+            self.editBtn.isEnabled = true
+            self.chngPasswordBtn.isEnabled = true
             
         })
     }

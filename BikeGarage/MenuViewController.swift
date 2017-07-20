@@ -8,6 +8,7 @@
 
 import UIKit
 import SideMenu
+import Firebase
 
 class MenuViewController: UIViewController {
     
@@ -118,6 +119,26 @@ class MenuViewController: UIViewController {
                 let mileVC:MileageViewController = self.storyboard?.instantiateViewController(withIdentifier: "MileageViewController") as! MileageViewController
                 preVC.present(mileVC, animated: false, completion: nil)
                 
+            }
+        }
+    }
+    
+    @IBAction func logoutTapped(_ sender: Any) {
+        
+        let preVC:UIViewController = self.presentingViewController!
+        print(preVC.restorationIdentifier!)
+        
+        self.dismiss(animated: true) {
+            DispatchQueue.main.async {
+                
+                let logInVC:LogInViewController = self.storyboard?.instantiateViewController(withIdentifier: "LogInViewController") as! LogInViewController
+                preVC.present(logInVC, animated: true) {
+                    do {
+                        try Auth.auth().signOut()
+                    } catch (let error) {
+                        print((error as NSError).code)
+                    }
+                }
             }
         }
     }

@@ -24,6 +24,7 @@
 		F33BA8C51F0730630037D24A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33BA8C41F0730630037D24A /* MenuViewController.swift */; };
 		F33BA8E81F0DB8FA0037D24A /* hamburgerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = F33BA8E71F0DB8FA0037D24A /* hamburgerIcon.png */; };
 		F3B279C71F1FABBD00B6F936 /* EditAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B279C61F1FABBD00B6F936 /* EditAccountViewController.swift */; };
+		F3B279C91F1FBFF600B6F936 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B279C81F1FBFF600B6F936 /* ChangePasswordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		F33BA8C41F0730630037D24A /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		F33BA8E71F0DB8FA0037D24A /* hamburgerIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hamburgerIcon.png; sourceTree = "<group>"; };
 		F3B279C61F1FABBD00B6F936 /* EditAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditAccountViewController.swift; sourceTree = "<group>"; };
+		F3B279C81F1FBFF600B6F936 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				F33662CA1F1E60490007C898 /* MileageViewController.swift */,
 				F33662C81F1E5D5D0007C898 /* AccountViewController.swift */,
 				F3B279C61F1FABBD00B6F936 /* EditAccountViewController.swift */,
+				F3B279C81F1FBFF600B6F936 /* ChangePasswordViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				F3279EAF1F05DC88006E4F35 /* LogInViewController.swift in Sources */,
 				F33662C21F0DC3130007C898 /* BikeViewController.swift in Sources */,
 				F3279EAD1F05DC88006E4F35 /* AppDelegate.swift in Sources */,
+				F3B279C91F1FBFF600B6F936 /* ChangePasswordViewController.swift in Sources */,
 				F33BA8C31F06A5B80037D24A /* CreateUserViewController.swift in Sources */,
 				F33662C91F1E5D5D0007C898 /* AccountViewController.swift in Sources */,
 			);
