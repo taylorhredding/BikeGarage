@@ -71,7 +71,7 @@ class MenuViewController: UIViewController {
         self.dismiss(animated: true) {
             DispatchQueue.main.async {
                 
-                let bikeVC:BikeViewController = self.storyboard?.instantiateViewController(withIdentifier: "BikeViewController") as! BikeViewController
+                let bikeVC:UINavigationController = self.storyboard?.instantiateViewController(withIdentifier: "bikeNavController") as! UINavigationController
                 preVC.present(bikeVC, animated: false, completion: nil)
                 
             }

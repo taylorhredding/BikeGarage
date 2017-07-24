@@ -25,6 +25,8 @@
 		F33BA8E81F0DB8FA0037D24A /* hamburgerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = F33BA8E71F0DB8FA0037D24A /* hamburgerIcon.png */; };
 		F3B279C71F1FABBD00B6F936 /* EditAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B279C61F1FABBD00B6F936 /* EditAccountViewController.swift */; };
 		F3B279C91F1FBFF600B6F936 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B279C81F1FBFF600B6F936 /* ChangePasswordViewController.swift */; };
+		F3B279CB1F264B0300B6F936 /* SelectBikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B279CA1F264B0300B6F936 /* SelectBikeViewController.swift */; };
+		F3B279CD1F264FAF00B6F936 /* Bike.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B279CC1F264FAF00B6F936 /* Bike.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		F33BA8E71F0DB8FA0037D24A /* hamburgerIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hamburgerIcon.png; sourceTree = "<group>"; };
 		F3B279C61F1FABBD00B6F936 /* EditAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditAccountViewController.swift; sourceTree = "<group>"; };
 		F3B279C81F1FBFF600B6F936 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		F3B279CA1F264B0300B6F936 /* SelectBikeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectBikeViewController.swift; sourceTree = "<group>"; };
+		F3B279CC1F264FAF00B6F936 /* Bike.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bike.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,7 @@
 				F33662C81F1E5D5D0007C898 /* AccountViewController.swift */,
 				F3B279C61F1FABBD00B6F936 /* EditAccountViewController.swift */,
 				F3B279C81F1FBFF600B6F936 /* ChangePasswordViewController.swift */,
+				F3B279CA1F264B0300B6F936 /* SelectBikeViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				F33BA8BD1F069C8D0037D24A /* User.swift */,
+				F3B279CC1F264FAF00B6F936 /* Bike.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -274,6 +280,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3B279CD1F264FAF00B6F936 /* Bike.swift in Sources */,
+				F3B279CB1F264B0300B6F936 /* SelectBikeViewController.swift in Sources */,
 				F33BA8C11F06A5860037D24A /* HomeViewController.swift in Sources */,
 				F33662CB1F1E60490007C898 /* MileageViewController.swift in Sources */,
 				F33BA8BE1F069C8D0037D24A /* User.swift in Sources */,

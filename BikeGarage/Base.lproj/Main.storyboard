@@ -213,7 +213,7 @@
             </objects>
             <point key="canvasLocation" x="3592.8000000000002" y="19.340329835082461"/>
         </scene>
-        <!--Bikes-->
+        <!--Current Bike-->
         <scene sceneID="lEJ-RL-Ouu">
             <objects>
                 <viewController storyboardIdentifier="BikeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="F0r-g6-HpT" customClass="BikeViewController" customModule="BikeGarage" customModuleProvider="target" sceneMemberID="viewController">
@@ -237,15 +237,24 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Thd-BD-dDD">
+                                <rect key="frame" x="149" y="376" width="77" height="30"/>
+                                <state key="normal" title="Select Bike"/>
+                                <connections>
+                                    <segue destination="IXD-Ce-CdP" kind="show" id="uBW-j1-oQ1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="idh-Qj-sBv" firstAttribute="leading" secondItem="hbc-Be-opk" secondAttribute="leading" id="0aQ-lt-ygj"/>
                             <constraint firstAttribute="trailing" secondItem="idh-Qj-sBv" secondAttribute="trailing" id="0cV-Zz-ta1"/>
                             <constraint firstItem="idh-Qj-sBv" firstAttribute="top" secondItem="hbc-Be-opk" secondAttribute="top" constant="-10" id="MM3-gd-U1M"/>
+                            <constraint firstItem="Thd-BD-dDD" firstAttribute="top" secondItem="idh-Qj-sBv" secondAttribute="bottom" constant="312" id="aYc-Eb-Li0"/>
+                            <constraint firstItem="Thd-BD-dDD" firstAttribute="centerX" secondItem="hbc-Be-opk" secondAttribute="centerX" id="uNS-G6-PMw"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Bikes" id="abw-IG-VHW">
+                    <navigationItem key="navigationItem" title="Current Bike" id="abw-IG-VHW">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="lIx-RH-d54">
                             <inset key="imageInsets" minX="20" minY="-300" maxX="0.0" maxY="-500"/>
                             <connections>
@@ -257,7 +266,57 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nnn-9Z-r87" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1556" y="954"/>
+            <point key="canvasLocation" x="1994" y="1236"/>
+        </scene>
+        <!--My Bikes-->
+        <scene sceneID="biK-Dd-iwS">
+            <objects>
+                <viewController id="IXD-Ce-CdP" customClass="SelectBikeViewController" customModule="BikeGarage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6zd-FR-hyK"/>
+                        <viewControllerLayoutGuide type="bottom" id="p1K-dy-11a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gMZ-io-uvF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6d2-20-YQb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6d2-20-YQb" firstAttribute="leading" secondItem="gMZ-io-uvF" secondAttribute="leading" id="0jH-3G-LqB"/>
+                            <constraint firstItem="p1K-dy-11a" firstAttribute="top" secondItem="6d2-20-YQb" secondAttribute="bottom" id="Ik4-hX-5Wr"/>
+                            <constraint firstAttribute="trailing" secondItem="6d2-20-YQb" secondAttribute="trailing" id="axt-ou-S6L"/>
+                            <constraint firstItem="6d2-20-YQb" firstAttribute="top" secondItem="gMZ-io-uvF" secondAttribute="top" id="u8f-vh-CRR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Bikes" id="C3g-fD-baQ"/>
+                    <connections>
+                        <outlet property="tableView" destination="6d2-20-YQb" id="QVe-2J-pB4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QMI-TG-cV8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1001" y="2037"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ejE-pa-LWW">
+            <objects>
+                <navigationController storyboardIdentifier="bikeNavController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="weo-Wy-HrX" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tlQ-m3-0Wt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="F0r-g6-HpT" kind="relationship" relationship="rootViewController" id="3VN-Z0-PwM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WyY-64-Ua5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1001" y="1236"/>
         </scene>
         <!--Mileage View Controller-->
         <scene sceneID="5n3-ZG-Xbe">
@@ -630,7 +689,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="rNO-M8-wMe"/>
+        <segue reference="WEZ-9L-3QN"/>
         <segue reference="OaS-kB-awy"/>
     </inferredMetricsTieBreakers>
 </document>
