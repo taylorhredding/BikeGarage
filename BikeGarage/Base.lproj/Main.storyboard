@@ -312,25 +312,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Current Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c7I-PT-UwE">
-                                <rect key="frame" x="46" y="114" width="283" height="30"/>
+                                <rect key="frame" x="46" y="144" width="283" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2nU-sJ-Wrx">
-                                <rect key="frame" x="46" y="204" width="283" height="30"/>
+                                <rect key="frame" x="46" y="234" width="283" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm New Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g1f-Lm-g7S">
-                                <rect key="frame" x="46" y="254" width="283" height="30"/>
+                                <rect key="frame" x="46" y="284" width="283" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wc3-QC-EUa">
+                                <rect key="frame" x="46" y="94" width="283" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bas-Aq-6uJ">
-                                <rect key="frame" x="126" y="344" width="123" height="30"/>
+                                <rect key="frame" x="126" y="374" width="123" height="30"/>
                                 <state key="normal" title="Change Password"/>
                                 <connections>
                                     <action selector="changeTapped:" destination="wnF-nL-6n1" eventType="touchUpInside" id="ybS-n0-3vO"/>
@@ -341,20 +347,26 @@
                         <constraints>
                             <constraint firstItem="g1f-Lm-g7S" firstAttribute="leading" secondItem="N0f-13-bQe" secondAttribute="leadingMargin" constant="30" id="3Gj-VW-HmL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="g1f-Lm-g7S" secondAttribute="trailing" constant="30" id="5LE-Ij-Im2"/>
+                            <constraint firstItem="c7I-PT-UwE" firstAttribute="top" secondItem="wc3-QC-EUa" secondAttribute="bottom" constant="20" id="5ds-4u-5Uo"/>
                             <constraint firstItem="g1f-Lm-g7S" firstAttribute="top" secondItem="2nU-sJ-Wrx" secondAttribute="bottom" constant="20" id="CWP-Aw-D87"/>
                             <constraint firstItem="2nU-sJ-Wrx" firstAttribute="top" secondItem="c7I-PT-UwE" secondAttribute="bottom" constant="60" id="FcI-xq-J06"/>
+                            <constraint firstItem="wc3-QC-EUa" firstAttribute="leading" secondItem="N0f-13-bQe" secondAttribute="leadingMargin" constant="30" id="Gkj-WX-3qP"/>
+                            <constraint firstItem="wc3-QC-EUa" firstAttribute="top" secondItem="src-8Q-32Q" secondAttribute="bottom" constant="30" id="Qgr-zx-CWg"/>
                             <constraint firstItem="Bas-Aq-6uJ" firstAttribute="centerX" secondItem="N0f-13-bQe" secondAttribute="centerX" id="RUg-t2-754"/>
                             <constraint firstAttribute="trailingMargin" secondItem="c7I-PT-UwE" secondAttribute="trailing" constant="30" id="i2R-pa-hce"/>
                             <constraint firstItem="2nU-sJ-Wrx" firstAttribute="leading" secondItem="N0f-13-bQe" secondAttribute="leadingMargin" constant="30" id="iCB-5C-Pxh"/>
-                            <constraint firstItem="c7I-PT-UwE" firstAttribute="top" secondItem="src-8Q-32Q" secondAttribute="bottom" constant="50" id="nxf-k5-2EO"/>
                             <constraint firstItem="c7I-PT-UwE" firstAttribute="leading" secondItem="N0f-13-bQe" secondAttribute="leadingMargin" constant="30" id="rpt-yh-ORT"/>
+                            <constraint firstItem="wc3-QC-EUa" firstAttribute="centerX" secondItem="N0f-13-bQe" secondAttribute="centerX" id="v50-CI-ibj"/>
                             <constraint firstItem="Bas-Aq-6uJ" firstAttribute="top" secondItem="g1f-Lm-g7S" secondAttribute="bottom" constant="60" id="vhs-DI-Zgl"/>
                             <constraint firstAttribute="trailingMargin" secondItem="2nU-sJ-Wrx" secondAttribute="trailing" constant="30" id="w9Y-xF-fAw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wc3-QC-EUa" secondAttribute="trailing" constant="30" id="wZa-mB-Mba"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="chngBtn" destination="Bas-Aq-6uJ" id="HPz-jf-n5o"/>
                         <outlet property="confirmNewPasswordTxt" destination="g1f-Lm-g7S" id="Ysl-8b-NeG"/>
                         <outlet property="currentPasswordTxt" destination="c7I-PT-UwE" id="0EW-wE-42d"/>
+                        <outlet property="emailTxt" destination="wc3-QC-EUa" id="PnS-Z7-FIe"/>
                         <outlet property="newPasswordTxt" destination="2nU-sJ-Wrx" id="gvb-ye-jxB"/>
                     </connections>
                 </viewController>
