@@ -27,6 +27,7 @@
 		F3B279C91F1FBFF600B6F936 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B279C81F1FBFF600B6F936 /* ChangePasswordViewController.swift */; };
 		F3B279CB1F264B0300B6F936 /* SelectBikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B279CA1F264B0300B6F936 /* SelectBikeViewController.swift */; };
 		F3B279CD1F264FAF00B6F936 /* Bike.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B279CC1F264FAF00B6F936 /* Bike.swift */; };
+		F3E241101F26BA92001AC19B /* CreateBikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E2410F1F26BA92001AC19B /* CreateBikeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		F3B279C81F1FBFF600B6F936 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		F3B279CA1F264B0300B6F936 /* SelectBikeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectBikeViewController.swift; sourceTree = "<group>"; };
 		F3B279CC1F264FAF00B6F936 /* Bike.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bike.swift; sourceTree = "<group>"; };
+		F3E2410F1F26BA92001AC19B /* CreateBikeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateBikeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,17 +124,12 @@
 		F33BA8BC1F069C420037D24A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				F3279EAE1F05DC88006E4F35 /* LogInViewController.swift */,
-				F33BA8BA1F069C030037D24A /* SignUpViewController.swift */,
+				F3B279D11F26523400B6F936 /* Bikes */,
+				F3B279D01F26521700B6F936 /* Login/Create */,
+				F3B279CF1F2651FB00B6F936 /* Account */,
+				F3B279CE1F2651E600B6F936 /* Menu */,
 				F33BA8C01F06A5860037D24A /* HomeViewController.swift */,
-				F33BA8C21F06A5B80037D24A /* CreateUserViewController.swift */,
-				F33BA8C41F0730630037D24A /* MenuViewController.swift */,
-				F33662C11F0DC3130007C898 /* BikeViewController.swift */,
 				F33662CA1F1E60490007C898 /* MileageViewController.swift */,
-				F33662C81F1E5D5D0007C898 /* AccountViewController.swift */,
-				F3B279C61F1FABBD00B6F936 /* EditAccountViewController.swift */,
-				F3B279C81F1FBFF600B6F936 /* ChangePasswordViewController.swift */,
-				F3B279CA1F264B0300B6F936 /* SelectBikeViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -152,6 +149,44 @@
 				F33BA8E71F0DB8FA0037D24A /* hamburgerIcon.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		F3B279CE1F2651E600B6F936 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				F33BA8C41F0730630037D24A /* MenuViewController.swift */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		F3B279CF1F2651FB00B6F936 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				F33662C81F1E5D5D0007C898 /* AccountViewController.swift */,
+				F3B279C81F1FBFF600B6F936 /* ChangePasswordViewController.swift */,
+				F3B279C61F1FABBD00B6F936 /* EditAccountViewController.swift */,
+			);
+			name = Account;
+			sourceTree = "<group>";
+		};
+		F3B279D01F26521700B6F936 /* Login/Create */ = {
+			isa = PBXGroup;
+			children = (
+				F3279EAE1F05DC88006E4F35 /* LogInViewController.swift */,
+				F33BA8BA1F069C030037D24A /* SignUpViewController.swift */,
+				F33BA8C21F06A5B80037D24A /* CreateUserViewController.swift */,
+			);
+			name = Login/Create;
+			sourceTree = "<group>";
+		};
+		F3B279D11F26523400B6F936 /* Bikes */ = {
+			isa = PBXGroup;
+			children = (
+				F33662C11F0DC3130007C898 /* BikeViewController.swift */,
+				F3B279CA1F264B0300B6F936 /* SelectBikeViewController.swift */,
+				F3E2410F1F26BA92001AC19B /* CreateBikeViewController.swift */,
+			);
+			name = Bikes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +326,7 @@
 				F3279EAF1F05DC88006E4F35 /* LogInViewController.swift in Sources */,
 				F33662C21F0DC3130007C898 /* BikeViewController.swift in Sources */,
 				F3279EAD1F05DC88006E4F35 /* AppDelegate.swift in Sources */,
+				F3E241101F26BA92001AC19B /* CreateBikeViewController.swift in Sources */,
 				F3B279C91F1FBFF600B6F936 /* ChangePasswordViewController.swift in Sources */,
 				F33BA8C31F06A5B80037D24A /* CreateUserViewController.swift in Sources */,
 				F33662C91F1E5D5D0007C898 /* AccountViewController.swift in Sources */,

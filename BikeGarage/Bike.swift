@@ -10,6 +10,10 @@ import Foundation
 
 class Bike {
     
+    var uuid = ""
+    var key = ""
+    
+    var name = ""
     var frame = ""
     var chain = ""
     var frontDer = ""
@@ -17,8 +21,10 @@ class Bike {
     var brakes = ""
     var cable = ""
     var pedal = ""
-    var rearChainRing = ""
+    var cassette = ""
     var frontChainRing = ""
+    var active = Bool()
+    var km = Bool()
     
     var lifeMileframe = 0
     var lifeMilechain = 0
